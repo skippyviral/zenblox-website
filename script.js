@@ -1,25 +1,46 @@
-// Smooth scrolling
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const navHeight = document.querySelector('.navbar').offsetHeight;
+            const targetPosition = target.offsetTop - navHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });
 });
 
-// Navbar scroll effect
+// Navbar shadow on scroll
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.08)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
     } else {
         navbar.style.boxShadow = 'none';
     }
+});
+
+// Tab functionality
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons and contents
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked button
+        btn.classList.add('active');
+        
+        // Show corresponding content
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
 });
 
 // FAQ Accordion
@@ -46,11 +67,11 @@ const navLinks = document.querySelector('.nav-links');
 
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        navLinks.classList.toggle('mobile-active');
     });
 }
 
-// Animate on scroll
+// Animate elements on scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -65,9 +86,20 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.engine-card, .result-card, .arch-card, .unit-card, .security-card, .pricing-card, .agent-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(card);
+// Add animation to cards
+const animatedElements = document.querySelectorAll('.stack-card, .result-card, .capability-card, .agent-card, .unit-card, .security-card, .pricing-card');
+animatedElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
 });
+
+// Form submission (prevent default for demo)
+const contactForm = document.querySelector('.contact-form form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you! Your strategy call request has been submitted. We will contact you within 24 hours.');
+    });
+}
