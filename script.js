@@ -30,14 +30,11 @@ const tabContents = document.querySelectorAll('.tab-content');
 
 tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // Remove active class from all buttons and contents
         tabBtns.forEach(b => b.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
         
-        // Add active class to clicked button
         btn.classList.add('active');
         
-        // Show corresponding content
         const tabId = btn.getAttribute('data-tab');
         document.getElementById(tabId).classList.add('active');
     });
@@ -49,12 +46,10 @@ document.querySelectorAll('.faq-question').forEach(question => {
         const faqItem = question.parentElement;
         const isActive = faqItem.classList.contains('active');
         
-        // Close all FAQ items
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
         });
         
-        // Open clicked item if it wasn't active
         if (!isActive) {
             faqItem.classList.add('active');
         }
@@ -86,7 +81,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Add animation to cards
 const animatedElements = document.querySelectorAll('.stack-card, .result-card, .capability-card, .agent-card, .unit-card, .security-card, .pricing-card');
 animatedElements.forEach(el => {
     el.style.opacity = '0';
@@ -95,7 +89,7 @@ animatedElements.forEach(el => {
     observer.observe(el);
 });
 
-// Form submission (prevent default for demo)
+// Form submission
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
