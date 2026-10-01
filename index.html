@@ -9,17 +9,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Top Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">Zenblox</a>
             <ul class="nav-links">
                 <li class="has-dropdown">
-                    <a href="#solutions">Solutions <i class="fas fa-chevron-down"></i></a>
+                    <a href="#solutions">AI Solutions <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu mega-menu">
+                        <div class="mega-menu-grid">
+                            <div class="mega-col">
+                                <h4>SOLUTIONS</h4>
+                                <ul>
+                                    <li><a href="#">AI Autonomous Agents</a></li>
+                                    <li><a href="#">Custom Enterprise LLMs</a></li>
+                                    <li><a href="#">Conversational Intelligence</a></li>
+                                    <li><a href="#">Agentic Workflow Systems</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4>SERVICES</h4>
+                                <ul>
+                                    <li><a href="#">Workflow Automation</a></li>
+                                    <li><a href="#">SaaS Deep Integration</a></li>
+                                    <li><a href="#">Enterprise Migration</a></li>
+                                    <li><a href="#">Architecture & Audit</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4>INTEGRATIONS & MIGRATION</h4>
+                                <ul>
+                                    <li><a href="#">Make (Integromat)</a></li>
+                                    <li><a href="#">n8n Enterprise Automation</a></li>
+                                    <li><a href="#">Zapier Central & Scaling</a></li>
+                                    <li><a href="#">Retool Custom Internal Tools</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4>COMPANY</h4>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Customer Case Studies</a></li>
+                                    <li><a href="#">Security & Governance</a></li>
+                                    <li><a href="#">Contact & Strategy Calls</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-menu-offices">
+                            <div class="office">
+                                <h5>LONDON OFFICE</h5>
+                                <p>10 Finsbury Square, London EC2A 1AF</p>
+                                <a href="mailto:london@zenblox.ai">london@zenblox.ai</a>
+                            </div>
+                            <div class="office">
+                                <h5>SAN FRANCISCO OFFICE</h5>
+                                <p>548 Market St, Suite 72104, San Francisco, CA</p>
+                                <a href="mailto:sf@zenblox.ai">sf@zenblox.ai</a>
+                            </div>
+                            <div class="office">
+                                <h5>SINGAPORE OFFICE</h5>
+                                <p>1 Raffles Place, #20-01 One Raffles Place</p>
+                                <a href="mailto:sg@zenblox.ai">sg@zenblox.ai</a>
+                            </div>
+                        </div>
+                        <div class="mega-menu-footer">
+                            <p>© 2025 Zenblox Inc. All rights reserved.</p>
+                            <div class="mega-footer-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms of Service</a>
+                                <a href="#">SOC2 Compliance</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="has-dropdown">
-                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
-                </li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#platforms">Platforms</a></li>
                 <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -33,6 +96,26 @@
             </div>
         </div>
     </nav>
+
+    <!-- Secondary Navigation -->
+    <div class="secondary-nav">
+        <div class="container">
+            <div class="secondary-nav-content">
+                <a href="#" class="logo-small">Zenblox</a>
+                <ul class="secondary-links">
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="secondary-nav-right">
+                    <a href="#blog" class="blog-link">Read Blog <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="#contact" class="btn btn-primary btn-sm">Book a strategy call</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -65,11 +148,21 @@
             <div class="platforms-bar">
                 <span class="platforms-label">ENGINEERED ON PROVEN AUTOMATION & CLOUD PLATFORMS</span>
                 <div class="platform-logos">
-                    <span class="platform-logo">Make</span>
-                    <span class="platform-logo">n8n</span>
-                    <span class="platform-logo">Zapier</span>
-                    <span class="platform-logo">Google Cloud (Vertex AI)</span>
-                    <span class="platform-logo">Microsoft Power Platform</span>
+                    <div class="platform-item">
+                        <span class="platform-logo">Make</span>
+                    </div>
+                    <div class="platform-item">
+                        <span class="platform-logo">n8n</span>
+                    </div>
+                    <div class="platform-item">
+                        <span class="platform-logo">Zapier</span>
+                    </div>
+                    <div class="platform-item">
+                        <span class="platform-logo">Google Cloud (Vertex AI)</span>
+                    </div>
+                    <div class="platform-item">
+                        <span class="platform-logo">Microsoft Power Platform</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,4 +184,496 @@
                     <p>Multi-branch JSON router, asynchronous retry loops, webhook listeners, and resilient visual pipeline orchestration.</p>
                     <div class="key-use">Key Use: API Glue & Webhook routing</div>
                 </div>
-                <div class="stack-
+                <div class="stack-card">
+                    <h3>n8n</h3>
+                    <h4>Self-Hosted & Private</h4>
+                    <p>Custom nodes, LangChain native integration, Docker containerized security, and zero third-party telemetry for sensitive data.</p>
+                    <div class="key-use">Key Use: On-Prem & High-Volume AI</div>
+                </div>
+                <div class="stack-card">
+                    <h3>Zapier</h3>
+                    <h4>Enterprise Connectors</h4>
+                    <p>Rapid deployment for 6,000+ commercial SaaS connectors, instant triggers, and low-latency operational micro-tasks.</p>
+                    <div class="key-use">Key Use: Quick-turn SaaS syndication</div>
+                </div>
+                <div class="stack-card">
+                    <h3>Google Cloud</h3>
+                    <h4>Vertex AI & Serverless</h4>
+                    <p>Gemini 1.5 Pro embeddings, BigQuery telemetry pipelines, Cloud Functions, and Vector Search at planetary scale.</p>
+                    <div class="key-use">Key Use: Custom Vector RAG & Compute</div>
+                </div>
+                <div class="stack-card">
+                    <h3>MS Power Platform</h3>
+                    <h4>O365 & Azure Fabric</h4>
+                    <p>Power Automate desktop RPA, Copilot Studio agent orchestrators, Sharepoint Graph API, and Azure OpenAI tenant isolation.</p>
+                    <div class="key-use">Key Use: Enterprise Microsoft Tenants</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="case-studies">
+        <div class="container">
+            <div class="section-label">VERIFIABLE IMPACT</div>
+            <div class="section-header">
+                <h2>Engineered Systems. Proven Results.</h2>
+                <p>Explore how high-velocity teams eliminate bottlenecks using Zenblox-engineered agent and automation stacks.<br><strong>Toggle any study to see internal architecture.</strong></p>
+            </div>
+            <div class="results-cards">
+                <div class="result-card">
+                    <div class="result-header">
+                        <span class="industry-tag">Retail & D2C</span>
+                        <span class="result-stat">30% Faster</span>
+                    </div>
+                    <h3>WhatsApp Omnichannel</h3>
+                    <h4>Conversational Checkout & Support</h4>
+                    <p>Automated multi-variant catalog inquiries, cart abandon recovery, and instant checkout link generation directly inside WhatsApp Business API.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Make</span>
+                        <span class="tech-tag">OpenAI GPT-4o</span>
+                        <span class="tech-tag">Shopify API</span>
+                    </div>
+                    <a href="#" class="architecture-link">View Architecture Breakdown <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="result-card">
+                    <div class="result-header">
+                        <span class="industry-tag">Hospitality Group</span>
+                        <span class="result-stat">90% Less</span>
+                    </div>
+                    <h3>Zero-Touch Multi-Property Guest</h3>
+                    <h4>Billing & Invoicing</h4>
+                    <p>Replaced 4 daily manual accounting hours per hotel location with automated folio extraction, OCR validation, and PMS-to-ERP synchronizations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">n8n On-Prem</span>
+                        <span class="tech-tag">Google Document AI</span>
+                        <span class="tech-tag">Oracle NetSuite</span>
+                    </div>
+                    <a href="#" class="architecture-link">View Architecture Breakdown <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="result-card">
+                    <div class="result-header">
+                        <span class="industry-tag">Legal Tech</span>
+                        <span class="result-stat">20 hrs/wk</span>
+                    </div>
+                    <h3>Sovereign RAG Assistant for M&A</h3>
+                    <h4>Contract Due Diligence</h4>
+                    <p>Secure retrieval-augmented generation engine indexing thousands of NDAs, vendor master agreements, and compliance filings within the client cloud.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MS Power Platform</span>
+                        <span class="tech-tag">Claude 3.5 Sonnet</span>
+                        <span class="tech-tag">Azure Vector DB</span>
+                    </div>
+                    <a href="#" class="architecture-link">View Architecture Breakdown <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog CTA -->
+    <section class="blog-cta" id="blog">
+        <div class="container">
+            <div class="blog-content">
+                <div class="blog-text">
+                    <div class="section-label">Engineering Logs & Blueprints</div>
+                    <h2>Latest thinking on Agentic AI & Enterprise Automations</h2>
+                    <p>We regularly dissect our production pipelines, latency benchmarks, and autonomous multi-agent patterns on our Medium publication. No fluff, pure architecture.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Read on Medium <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="capabilities" id="solutions">
+        <div class="container">
+            <div class="section-label">CAPABILITIES</div>
+            <div class="section-header">
+                <h2>The Dual-Track Automation Architecture</h2>
+                <p>We harmonize cognitive LLM autonomy with deterministic, zero-error workflow engines so your operations execute reliably.</p>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="capability-tabs">
+                <button class="tab-btn active" data-tab="ai-agents">AI Agents & Intelligence</button>
+                <button class="tab-btn" data-tab="workflows">Core Workflow Automations</button>
+            </div>
+            
+            <!-- AI Agents Tab Content -->
+            <div class="tab-content active" id="ai-agents">
+                <div class="capability-cards">
+                    <div class="capability-card">
+                        <div class="capability-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Autonomous Agents</h3>
+                        <p>Goal-oriented agents capable of recursive web research, decision loops, tool-calling APIs, and human escalation triggers.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Chatbots & Voice AI</h3>
+                        <p>Sub-500ms low latency conversational agents for inbound telephone support, WhatsApp, and CRM lead pre-qualification.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon"><i class="fas fa-database"></i></div>
+                        <h3>Enterprise RAG Systems</h3>
+                        <p>Semantic vector indexing with zero data leaking into public LLM training sets, featuring verified source document attribution.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Core Workflow Automations Tab Content -->
+            <div class="tab-content" id="workflows">
+                <div class="capability-cards">
+                    <div class="capability-card">
+                        <div class="capability-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Workflow Automation</h3>
+                        <p>End-to-end deterministic workflows with error handling, automatic retries, and complete audit trails for compliance.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon"><i class="fas fa-plug"></i></div>
+                        <h3>SaaS Deep Integration</h3>
+                        <p>Native connections to 6,000+ enterprise applications with real-time sync and bi-directional data flow.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3>Enterprise Migration</h3>
+                        <p>Seamless migration from legacy systems to modern cloud-native automation platforms with zero downtime.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deployable Agents -->
+            <div class="deployable-agents">
+                <h3>Deployable Enterprise Agents</h3>
+                <div class="agent-grid">
+                    <div class="agent-card">
+                        <h4><i class="fas fa-tags"></i> Dynamic Pricing Agent</h4>
+                        <p>Real-time competitor scrapes & margin recalculations.</p>
+                    </div>
+                    <div class="agent-card">
+                        <h4><i class="fas fa-globe"></i> GEO Optimization Agent</h4>
+                        <p>Autonomous multi-language content & regional taxonomy.</p>
+                    </div>
+                    <div class="agent-card">
+                        <h4><i class="fas fa-box"></i> Product Enhancement Agent</h4>
+                        <p>Enriches ERP catalog metadata & visual descriptions.</p>
+                    </div>
+                    <div class="agent-card">
+                        <h4><i class="fas fa-chart-line"></i> Website Growth Agent</h4>
+                        <p>Audits conversion friction & conducts automated A/B tests.</p>
+                    </div>
+                    <div class="agent-card">
+                        <h4><i class="fas fa-file-invoice"></i> Quotation Agent</h4>
+                        <p>Parses complex RFPs and generates draft estimate sheets.</p>
+                    </div>
+                    <div class="agent-card">
+                        <h4><i class="fas fa-user-tie"></i> AI SDR Agent</h4>
+                        <p>Conducts deep prospect research & personalizes outreach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operating Units Section -->
+    <section class="operating-units">
+        <div class="container">
+            <div class="section-label">FUNCTIONAL COVERAGE</div>
+            <div class="section-header">
+                <h2>Transforming Every Operating Unit</h2>
+                <p>From customer acquisition to general ledger compliance, our automations remove friction across departmental boundaries.</p>
+            </div>
+            <div class="units-grid">
+                <div class="unit-card">
+                    <h3><i class="fas fa-chart-bar"></i> Sales & RevOps</h3>
+                    <ul>
+                        <li>Enriched lead scoring via Clearbit & LinkedIn</li>
+                        <li>Auto-scheduling & dynamic routing in HubSpot</li>
+                        <li>Deal desk quoting and contract dispatch</li>
+                    </ul>
+                </div>
+                <div class="unit-card">
+                    <h3><i class="fas fa-bullhorn"></i> Marketing & Growth</h3>
+                    <ul>
+                        <li>Multi-channel ad performance consolidation</li>
+                        <li>AI copy generation & CMS staging pipelines</li>
+                        <li>Automated webinar attendee follow-up chains</li>
+                    </ul>
+                </div>
+                <div class="unit-card">
+                    <h3><i class="fas fa-shopping-cart"></i> E-Commerce & Retail</h3>
+                    <ul>
+                        <li>Inventory re-order alerts across 3PL warehouses</li>
+                        <li>WhatsApp interactive order updates</li>
+                        <li>Chargeback defense document gathering</li>
+                    </ul>
+                </div>
+                <div class="unit-card">
+                    <h3><i class="fas fa-calculator"></i> Finance & Accounting</h3>
+                    <ul>
+                        <li>Automated AP invoice scanning & 3-way matching</li>
+                        <li>Stripe-to-Xero reconciliation syncs</li>
+                        <li>Overdue invoice dunning and payment alerts</li>
+                    </ul>
+                </div>
+                <div class="unit-card">
+                    <h3><i class="fas fa-users"></i> HR & Operations</h3>
+                    <ul>
+                        <li>Automated employee onboarding & tool provisioning</li>
+                        <li>Internal policy search bots on Slack & Teams</li>
+                        <li>Time-off request syncs with central calendars</li>
+                    </ul>
+                </div>
+                <div class="unit-card">
+                    <h3><i class="fas fa-server"></i> Enterprise Core & IT</h3>
+                    <ul>
+                        <li>Access log audit pipelines to BigQuery</li>
+                        <li>Security alert auto-triage in PagerDuty</li>
+                        <li>Cross-cloud backup verification automations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security">
+        <div class="container">
+            <div class="section-label">GOVERNANCE & TRUST</div>
+            <div class="section-header">
+                <h2>Enterprise Security at Every Node</h2>
+                <p>We never train third-party models on your private corporate records. Workflows are deployed into your own cloud tenants or protected with enterprise SLAs.</p>
+            </div>
+            <div class="security-cards">
+                <div class="security-card">
+                    <div class="security-icon"><i class="fas fa-globe-europe"></i></div>
+                    <h3>EU & US Residency</h3>
+                    <p>Data stays in your chosen jurisdictional boundaries with complete GDPR compliance.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Granular RBAC</h3>
+                    <p>Role-based controls ensuring staff only see data permitted by their clearance tier.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon"><i class="fas fa-hand-paper"></i></div>
+                    <h3>Human In The Loop</h3>
+                    <p>Mandatory manual validation checkpoints for high-stakes financial or legal executions.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>SOC2 & Audit Ready</h3>
+                    <p>Full system logging, prompt version control, and auditable payload telemetry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-label">TRANSPARENT PRICING</div>
+            <div class="section-header">
+                <h2>Predictable Engagements. Zero Surprises.</h2>
+                <p>Choose between targeted fixed-scope projects, continuous engineering sprints, or strategic advisory.</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-type">Quick Strike</div>
+                    <h3>Targeted Build</h3>
+                    <p class="pricing-desc">For teams needing a single deterministic workflow or standalone custom AI agent.</p>
+                    <div class="price">₹4,500<span>/ project</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Dedicated 2-week implementation</li>
+                        <li><i class="fas fa-check"></i> Make or n8n full scenario build</li>
+                        <li><i class="fas fa-check"></i> Standard error alerting & logging</li>
+                        <li><i class="fas fa-check"></i> 30 days post-launch warranty</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-dark btn-full">Start Targeted Build</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-type">Continuous Evolution</div>
+                    <h3>Automation Retainer</h3>
+                    <p class="pricing-desc">An embedded senior automation squad iterating on your systems every sprint.</p>
+                    <div class="price">₹7,800<span>/ month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Full-stack AI & workflow engineering</li>
+                        <li><i class="fas fa-check"></i> Vertex AI / OpenAI / Anthropic custom pipelines</li>
+                        <li><i class="fas fa-check"></i> 24/7 incident monitoring & queue management</li>
+                        <li><i class="fas fa-check"></i> Weekly strategy & sprint demos</li>
+                        <li><i class="fas fa-check"></i> 2x 90-minute executive briefing sessions</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Book Retainer Discovery</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-type">Strategic Advisory</div>
+                    <h3>Architecture Sprint</h3>
+                    <p class="pricing-desc">High-level audits, feasibility blueprints, and security guidance for enterprise CTOs.</p>
+                    <div class="price">₹2,800<span>/ sprint</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Complete stack audit (Make, n8n, GCP, Power Platform)</li>
+                        <li><i class="fas fa-check"></i> Security, RBAC & data privacy review</li>
+                        <li><i class="fas fa-check"></i> Technical RFP & tooling blueprint</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-dark btn-full">Schedule Architecture Sprint</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-label">FREQUENTLY ASKED QUESTIONS</div>
+            <div class="section-header">
+                <h2>Clear Answers for Engineering & Business Leads</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What automation and cloud platforms do you build on?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We specialize in Make (Integromat), n8n, Zapier, Google Cloud (Vertex AI), and Microsoft Power Platform. Our engineers are certified across all major automation ecosystems and can work with your existing stack or recommend the best fit for your use case.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How fast can we expect our first automated agent in production?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most targeted builds go live within 2 weeks. Complex enterprise integrations with multiple systems typically take 4-6 weeks. We provide detailed timelines during our discovery call based on your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do we own the automation workflows and code?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, 100%. All workflows, custom code, and configurations are deployed directly into your cloud tenants. You own everything we build. We provide full documentation and knowledge transfer so your team can maintain and extend the automations independently.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you handle LLM hallucinations and data confidentiality?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We implement retrieval-augmented generation (RAG) with verified source attribution to minimize hallucinations. For confidentiality, we use enterprise LLM deployments (Azure OpenAI, Vertex AI) that don't train on your data, combined with human-in-the-loop checkpoints for critical decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Ready to grow and agentify your business?</h2>
+                    <p>Schedule a 30-minute discovery session with our Lead Solutions Architect. We will review your bottlenecks and provide high-level architecture options with zero sales pressure.</p>
+                    <ul class="contact-benefits">
+                        <li><i class="fas fa-check-circle"></i> Live review of your tech stack (Make, n8n, GCP, etc.)</li>
+                        <li><i class="fas fa-check-circle"></i> Feasibility score & timeline estimate</li>
+                        <li><i class="fas fa-check-circle"></i> Standard NDA pre-cleared upon request</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Let's Build</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Your Full Name</label>
+                            <input type="text" placeholder="Alex Turner">
+                        </div>
+                        <div class="form-group">
+                            <label>Work Email</label>
+                            <input type="email" placeholder="alex@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Target Platform Preference</label>
+                            <select>
+                                <option>Not sure / Architect recommendation</option>
+                                <option>Make (Integromat)</option>
+                                <option>n8n</option>
+                                <option>Zapier</option>
+                                <option>Google Cloud</option>
+                                <option>Microsoft Power Platform</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Primary Automation Objective</label>
+                            <textarea placeholder="e.g. Sync ERP orders with WhatsApp AI customer assistant..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Confirm Strategy Call</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Platforms -->
+    <section class="supported-platforms">
+        <div class="container">
+            <div class="section-label">SUPPORTED PLATFORMS & ECOSYSTEMS</div>
+            <div class="platform-logos-large">
+                <span>Make</span>
+                <span>n8n</span>
+                <span>Zapier</span>
+                <span>Google Cloud</span>
+                <span>Microsoft Power Platform</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Zenblox</a>
+                    <p>Engineering enterprise workflows, custom integration architectures, and autonomous AI automation suites.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#platforms">Platforms</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources & Stories</h4>
+                    <ul>
+                        <li><a href="#">Medium Publications <i class="fas fa-external-link-alt"></i></a></li>
+                        <li><a href="#">Integration Playbooks</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact & Offices</h4>
+                    <ul>
+                        <li>Email: hello@zenblox.io</li>
+                        <li>HQ: 548 Market St, Suite 3200</li>
+                        <li>San Francisco, CA 94104</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Zenblox. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
