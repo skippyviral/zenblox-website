@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zebrix - AI Future of Your Enterprise</title>
+    <title>Zenblox - AI Autonomous Agents & Enterprise Workflow Automation</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">Zebrix</div>
+            <a href="#" class="logo">Zenblox</a>
             <ul class="nav-links">
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#customers">Customers</a></li>
-                <li><a href="#platform">Platform</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li class="has-dropdown">
+                    <a href="#solutions">Solutions <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
             <div class="nav-right">
-                <a href="#" class="btn btn-primary">Get a Demo</a>
-                <div class="user-icon"><i class="fas fa-user"></i></div>
+                <div class="lang-selector">EN <i class="fas fa-chevron-down"></i></div>
+                <a href="#contact" class="btn btn-primary">Book a strategy call</a>
             </div>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -33,367 +37,58 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Discover the AI future<br>of your enterprise</h1>
-                <p class="hero-subtitle">Zebrix is the only agentless automation solution built for enterprise-scale automation, combining systems and service-level orchestration.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Book a meeting</a>
-                    <a href="#" class="btn btn-outline">Get a free trial</a>
+            <div class="hero-badge">Autonomous Agents & Deterministic Workflows</div>
+            <h1>Discover the AI future of your<br>enterprise</h1>
+            <p class="hero-subtitle">We help high-growth companies plan, build, and deploy autonomous AI agents and deterministic workflow automations with rock-solid security and measurable ROI.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Book a strategy call</a>
+                <a href="#solutions" class="btn btn-outline">Explore Solutions</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <span class="stat-value">99.8%</span>
+                    <span class="stat-label">Workflow SLA reliability</span>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-box">
-                        <span class="stat-value">99.8%</span>
-                        <span class="stat-label">uptime on Mandates</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-value">3.8x</span>
-                        <span class="stat-label">Return on savings</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-value">120+</span>
-                        <span class="stat-label">integrated systems</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-value">0+</span>
-                        <span class="stat-label">Lock-in</span>
-                    </div>
+                <div class="stat-box">
+                    <span class="stat-value">3.8x</span>
+                    <span class="stat-label">Average pipeline velocity</span>
                 </div>
-                <div class="trust-section">
-                    <p>Trusted by enterprises to automate Systems and Services with best in class AI</p>
-                    <div class="partner-logos">
-                        <span class="partner-logo">Partner 1</span>
-                        <span class="partner-logo">Partner 2</span>
-                        <span class="partner-logo">Partner 3</span>
-                    </div>
+                <div class="stat-box">
+                    <span class="stat-value">120+</span>
+                    <span class="stat-label">Production integrations</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-value">0-Lock-in</span>
+                    <span class="stat-label">Client-owned architecture</span>
+                </div>
+            </div>
+            <div class="platforms-bar">
+                <span class="platforms-label">ENGINEERED ON PROVEN AUTOMATION & CLOUD PLATFORMS</span>
+                <div class="platform-logos">
+                    <span class="platform-logo">Make</span>
+                    <span class="platform-logo">n8n</span>
+                    <span class="platform-logo">Zapier</span>
+                    <span class="platform-logo">Google Cloud (Vertex AI)</span>
+                    <span class="platform-logo">Microsoft Power Platform</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Engines Section -->
-    <section class="engines" id="platform">
+    <!-- Infrastructure Section -->
+    <section class="infrastructure" id="platforms">
         <div class="container">
+            <div class="section-label">INFRASTRUCTURE & STACK</div>
             <div class="section-header">
                 <h2>The Right Engine for Every Topology</h2>
-                <p>All of these unique node topologies dramatically simplify end-to-end automation pipelines.</p>
+                <p>We avoid vendor monoculture. Our engineers orchestrate deterministic cloud logic alongside generative agent frameworks on your stack of choice.</p>
             </div>
-            <div class="engine-cards">
-                <div class="engine-card">
-                    <div class="engine-icon"><i class="fas fa-server"></i></div>
-                    <h3>Hybrid</h3>
-                    <p>Automated orchestration across cloud and on-prem systems.</p>
+            <div class="stack-cards">
+                <div class="stack-card">
+                    <div class="stack-badge">Fully auditable runtimes</div>
+                    <h3>Make</h3>
+                    <h4>Complex Orchestration</h4>
+                    <p>Multi-branch JSON router, asynchronous retry loops, webhook listeners, and resilient visual pipeline orchestration.</p>
+                    <div class="key-use">Key Use: API Glue & Webhook routing</div>
                 </div>
-                <div class="engine-card">
-                    <div class="engine-icon"><i class="fas fa-database"></i></div>
-                    <h3>Data</h3>
-                    <p>Data-centric automation workflow engine.</p>
-                </div>
-                <div class="engine-card">
-                    <div class="engine-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Express</h3>
-                    <p>Fast and scalable automation execution.</p>
-                </div>
-                <div class="engine-card">
-                    <div class="engine-icon"><i class="fab fa-google"></i></div>
-                    <h3>Google Cloud</h3>
-                    <p>Cloud-native automation with Google integrations.</p>
-                </div>
-                <div class="engine-card">
-                    <div class="engine-icon"><i class="fab fa-microsoft"></i></div>
-                    <h3>MCS Azure Platform</h3>
-                    <p>Enterprise-grade automation engine for Microsoft Azure platform.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="results" id="solutions">
-        <div class="container">
-            <div class="section-header">
-                <h2>Engineered Systems. Proven Results.</h2>
-                <p>See how Zebrix transforms business processes across industries.</p>
-            </div>
-            <div class="results-cards">
-                <div class="result-card">
-                    <span class="industry-tag">Retail</span>
-                    <div class="result-stat">30% Faster</div>
-                    <p>Conversational checkout & support automation delivering faster customer experiences.</p>
-                    <a href="#" class="case-study-link">Read the Case Study <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="result-card">
-                    <span class="industry-tag">Insurance</span>
-                    <div class="result-stat">90% Less</div>
-                    <p>Effort reduction for fraud detection & invoice data processing workflows.</p>
-                    <a href="#" class="case-study-link">Read the Case Study <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="result-card">
-                    <span class="industry-tag">Services</span>
-                    <div class="result-stat">20 hrs/wk</div>
-                    <p>Saved by account and trade compliance intelligence automation.</p>
-                    <a href="#" class="case-study-link">Read the Case Study <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog CTA Section -->
-    <section class="blog-cta" id="blog">
-        <div class="container">
-            <div class="blog-cta-content">
-                <h2>Latest thinking on Agentic AI & Enterprise Automation</h2>
-                <p>Explore insights, trends, and best practices from our automation experts.</p>
-                <a href="#" class="btn btn-primary">Read the Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architecture Section -->
-    <section class="architecture">
-        <div class="container">
-            <div class="section-header">
-                <h2>The Dual-Track Automation Architecture</h2>
-                <p>Zebrix combines autonomous AI agents with enterprise AI systems for complete automation coverage.</p>
-            </div>
-            <div class="arch-cards">
-                <div class="arch-card">
-                    <div class="arch-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Autonomous Agents</h3>
-                    <p>Self-directed AI agents that operate with minimal human intervention.</p>
-                </div>
-                <div class="arch-card">
-                    <div class="arch-icon"><i class="fas fa-sliders-h"></i></div>
-                    <h3>Controlled AI Agents</h3>
-                    <p>AI agents with defined policies and governance rules.</p>
-                </div>
-                <div class="arch-card">
-                    <div class="arch-icon"><i class="fas fa-building"></i></div>
-                    <h3>Enterprise AI Systems</h3>
-                    <p>Integration with existing enterprise automation infrastructure.</p>
-                </div>
-            </div>
-            <div class="deployable-agents">
-                <h3>Deployable Enterprise Agents</h3>
-                <div class="agent-cards">
-                    <div class="agent-card">
-                        <div class="agent-icon"><i class="fas fa-database"></i></div>
-                        <h4>Data Agents</h4>
-                        <p>Automate data processing and transformation tasks.</p>
-                    </div>
-                    <div class="agent-card">
-                        <div class="agent-icon"><i class="fas fa-tasks"></i></div>
-                        <h4>Task Agents</h4>
-                        <p>Execute specific business tasks autonomously.</p>
-                    </div>
-                    <div class="agent-card">
-                        <div class="agent-icon"><i class="fas fa-cogs"></i></div>
-                        <h4>Process Agents</h4>
-                        <p>Orchestrate complex multi-step workflows.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Operating Units Section -->
-    <section class="operating-units" id="customers">
-        <div class="container">
-            <div class="section-header">
-                <h2>Transforming Every Operating Unit</h2>
-                <p>Zebrix delivers automation across all business functions.</p>
-            </div>
-            <div class="unit-cards">
-                <div class="unit-card">
-                    <div class="unit-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Sales & Marketing</h3>
-                </div>
-                <div class="unit-card">
-                    <div class="unit-icon"><i class="fas fa-bullhorn"></i></div>
-                    <h3>Marketing & Growth</h3>
-                </div>
-                <div class="unit-card">
-                    <div class="unit-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>E-Commerce Retail</h3>
-                </div>
-                <div class="unit-card">
-                    <div class="unit-icon"><i class="fas fa-calculator"></i></div>
-                    <h3>Finance & Accounting</h3>
-                </div>
-                <div class="unit-card">
-                    <div class="unit-icon"><i class="fas fa-users"></i></div>
-                    <h3>HR & Operations</h3>
-                </div>
-                <div class="unit-card">
-                    <div class="unit-icon"><i class="fas fa-headset"></i></div>
-                    <h3>Enterprise Service & IT</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Security Section -->
-    <section class="security">
-        <div class="container">
-            <div class="section-header">
-                <h2>Enterprise Security at Every Node</h2>
-                <p>Zebrix meets the highest security and compliance standards.</p>
-            </div>
-            <div class="security-cards">
-                <div class="security-card">
-                    <div class="security-icon"><i class="fas fa-globe"></i></div>
-                    <h3>EU & US Residency</h3>
-                    <p>Data residency options for compliance.</p>
-                </div>
-                <div class="security-card">
-                    <div class="security-icon"><i class="fas fa-user-shield"></i></div>
-                    <h3>Genuine RBAC</h3>
-                    <p>Role-based access control for security.</p>
-                </div>
-                <div class="security-card">
-                    <div class="security-icon"><i class="fas fa-hand-paper"></i></div>
-                    <h3>Human in the Loop</h3>
-                    <p>Human oversight for critical decisions.</p>
-                </div>
-                <div class="security-card">
-                    <div class="security-icon"><i class="fas fa-clipboard-check"></i></div>
-                    <h3>SOC2 & Audit Ready</h3>
-                    <p>Certified compliance for audits.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Predictable Engagements. Zero Surprises.</h2>
-                <p>Simple engagement plans with flexible options.</p>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <h3>Targeted Build</h3>
-                    <div class="price">₹4,500<span>/month</span></div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Automation design</li>
-                        <li><i class="fas fa-check"></i> Delivery support</li>
-                        <li><i class="fas fa-check"></i> Incremental basic functionality</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline-dark">Start Targeted Build</a>
-                </div>
-                <div class="pricing-card featured">
-                    <h3>Automation Retainer</h3>
-                    <div class="price">₹7,800<span>/month</span></div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Comprehensive automation</li>
-                        <li><i class="fas fa-check"></i> Lifecycle support</li>
-                        <li><i class="fas fa-check"></i> Priority assistance</li>
-                        <li><i class="fas fa-check"></i> Monthly reviews</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Start Automation Retainer</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Architecture Sprint</h3>
-                    <div class="price">₹2,800<span>/month</span></div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Architecture review</li>
-                        <li><i class="fas fa-check"></i> High-level consulting</li>
-                        <li><i class="fas fa-check"></i> Strategy guidance</li>
-                    </ul>
-                    <a href="#" class="btn btn-outline-dark">Start Architecture Sprint</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Clear Answers for Engineering & Business Leads</h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What automation and cloud platforms do you work on?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We support all major cloud platforms including AWS, Azure, Google Cloud, and hybrid on-premise solutions.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How fast can an agent run in production?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Our agents can be deployed to production within days, with enterprise-grade reliability from day one.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What security certifications do you have?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We are SOC2 certified and comply with GDPR, HIPAA, and other major regulatory frameworks.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Can I integrate with existing enterprise systems?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, Zebrix integrates with 120+ enterprise systems including SAP, Salesforce, Oracle, and more.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">Zebrix</div>
-                    <p>Enterprise AI automation for the future.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Platform</h4>
-                        <ul>
-                            <li><a href="#">Solutions</a></li>
-                            <li><a href="#">Customers</a></li>
-                            <li><a href="#">Pricing</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Security</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Zebrix. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                <div class="stack-
