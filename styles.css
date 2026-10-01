@@ -52,6 +52,7 @@ ul {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 12px 24px;
     border-radius: 8px;
@@ -96,7 +97,11 @@ ul {
 
 .btn-full {
     width: 100%;
-    justify-content: center;
+}
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 13px;
 }
 
 /* ===== Navigation ===== */
@@ -128,7 +133,11 @@ ul {
     gap: 32px;
 }
 
-.nav-links a {
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links > li > a {
     font-weight: 500;
     font-size: 14px;
     color: var(--gray-600);
@@ -136,14 +145,20 @@ ul {
     display: flex;
     align-items: center;
     gap: 4px;
+    padding: 8px 0;
 }
 
-.nav-links a:hover {
+.nav-links > li > a:hover {
     color: var(--primary);
 }
 
-.nav-links a i {
+.nav-links > li > a i {
     font-size: 10px;
+    transition: transform 0.2s;
+}
+
+.nav-links > li:hover > a i {
+    transform: rotate(180deg);
 }
 
 .nav-right {
@@ -170,6 +185,170 @@ ul {
     display: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+/* ===== Mega Menu ===== */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    min-width: 800px;
+    padding: 32px;
+}
+
+.nav-links > li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.mega-col h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray-400);
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.mega-col ul li {
+    margin-bottom: 12px;
+}
+
+.mega-col ul li a {
+    font-size: 14px;
+    color: var(--gray-700);
+    transition: color 0.2s;
+}
+
+.mega-col ul li a:hover {
+    color: var(--primary);
+}
+
+.mega-menu-offices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.office h5 {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--gray-400);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.office p {
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-bottom: 4px;
+}
+
+.office a {
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.mega-menu-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.mega-menu-footer p {
+    font-size: 12px;
+    color: var(--gray-400);
+}
+
+.mega-footer-links {
+    display: flex;
+    gap: 16px;
+}
+
+.mega-footer-links a {
+    font-size: 12px;
+    color: var(--gray-500);
+}
+
+.mega-footer-links a:hover {
+    color: var(--primary);
+}
+
+/* ===== Secondary Navigation ===== */
+.secondary-nav {
+    position: fixed;
+    top: 73px;
+    left: 0;
+    right: 0;
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+    z-index: 999;
+    display: none;
+}
+
+.secondary-nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.logo-small {
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.secondary-links {
+    display: flex;
+    gap: 24px;
+}
+
+.secondary-links a {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.secondary-links a:hover {
+    color: var(--primary);
+}
+
+.secondary-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blog-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.blog-link i {
+    font-size: 10px;
 }
 
 /* ===== Hero Section ===== */
@@ -567,7 +746,7 @@ section {
     padding: 40px;
 }
 
-.deployable-agents h3 {
+.deployable-agents > h3 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 32px;
@@ -842,7 +1021,7 @@ section {
     margin-bottom: 20px;
 }
 
-.contact-info p {
+.contact-info > p {
     color: var(--gray-400);
     font-size: 16px;
     line-height: 1.7;
@@ -1030,6 +1209,18 @@ section {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .dropdown-menu {
+        min-width: 600px;
+    }
+    
+    .mega-menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mega-menu-offices {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1112,5 +1303,15 @@ section {
     
     section {
         padding: 60px 0;
+    }
+    
+    .capability-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
